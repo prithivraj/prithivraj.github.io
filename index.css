@@ -105,6 +105,29 @@ header table {
 #top_part tr td{
     width:50%;
 }
+.pricing {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pricing td, .pricing th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pricing tr:nth-child(even){background-color: #f2f2f2;}
+
+.pricing tr:hover {background-color: #ddd;}
+
+.pricing th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
 #about {
     width:84% !important;
     height:95vh;
