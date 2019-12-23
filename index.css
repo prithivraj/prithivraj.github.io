@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
     max-width:100vw;
     overflow-x:hidden;
     scroll-behavior: smooth;
@@ -38,7 +38,7 @@ header {
     position:fixed;
     font-weight:bold;
     background:transparent;
-    color: #000000;
+    color: #ffffff;
     transition:0.4s ease-in-out;
     z-index:2;
 }
@@ -187,7 +187,7 @@ header table {
 #rightImage {
     width:100%;
     height:95vh;
-    background:url("https://github.com/prithivraj/prithivraj.github.io/blob/master/images/logo.jpeg?raw=true") center center;
+    background:linear-gradient(0deg,rgba(255, 44, 90, 0.2),rgba(2255, 44, 90, 0.1)),url("https://github.com/prithivraj/prithivraj.github.io/blob/master/images/3.jpeg?raw=true") center center;
     background-size:cover;
     background-repeat:no-repeat;
 }
