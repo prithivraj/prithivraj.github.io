@@ -124,7 +124,7 @@ header table {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
+    background-color: rgba(255, 44, 90, 0.8);
     color: white;
 }
 

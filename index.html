@@ -6,191 +6,795 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sri Kalpaka</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <table>
-            <tr>
-                <td id="logo">Sri Kalpaka</td>
-                <td id="navigation">
-                    <a href="#gallery">Gallery</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <table id="top_part">
+<div id="loading">
+    <div id="spinner"></div>
+</div>
+<div id="magnify">
+    <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+    <div id="img_here"></div>
+</div>
+<header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+    <table>
         <tr>
-            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1>Chennai's finest spa and salon.</h1>
-                <table>
-                    <!--<tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/sri.kalpaka"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/sri._.kalpaka"><i class="fab fa-instagram"></i></a></td>
-                    </tr>-->
-                </table>
+            <td id="logo">Sri Kalpaka</td>
+            <td id="navigation">
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
         </tr>
     </table>
-    <div id="gallery">
-        <h1>Gallery</h1>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/1.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/2.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/4.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/5.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/6.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/7.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/8.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/9.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/10.jpeg?raw=true">
-            <img onclick="magnify($(this).attr('src'))" src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/11.jpeg?raw=true">
-        </div>
-    </div>
-
-    <div id="services">
-        <h1>Services</h1>
-        <h2>Threading</h2>
-        <table class="pricing">
-            <tr>
-                <th>Service</th>
-                <th>Regular</th>
-                <th>Member</th>
-            </tr>
-            <tr>
-                <td>Eyebrows</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Upperlip</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Chin</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Forehead</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-        </table>
-        <h2>Waxing</h2>
-        <table class="pricing">
-            <tr>
-                <th>Service</th>
-                <th>Regular</th>
-                <th>Member</th>
-            </tr>
-            <tr>
-                <td>Half arms</td>
-                <td>300</td>
-                <td>220</td>
-            </tr>
-            <tr>
-                <td>Half legs</td>
-                <td>300</td>
-                <td>200</td>
-            </tr>
-            <tr>
-                <td>Full arms</td>
-                <td>500</td>
-                <td>350</td>
-            </tr>
-            <tr>
-                <td>Full legs</td>
-                <td>600</td>
-                <td>450</td>
-            </tr>
-            <tr>
-                <td>Under arms</td>
-                <td>150</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>Chin</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Upper lip</td>
-                <td>30</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Face</td>
-                <td>250</td>
-                <td>30</td>
-            </tr>
-        </table>
-        <h2>Flavoured wax</h2>
-        <table class="pricing">
-            <tr>
-                <th>Service</th>
-                <th>Regular</th>
-                <th>Member</th>
-            </tr>
-        </table>
-    </div>
-
-    <div id="contact">
-        <h1>Contact</h1>
+</header>
+<table id="top_part">
+    <tr>
+        <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+            <h1>Chennai's finest spa and salon.</h1>
             <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fas fa-phone"></i> &nbsp; +919884886778</td>
-                                </tr>
-<!--                                <tr>-->
-<!--                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>-->
-<!--                                </tr>-->
-
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        22, Sadasivam Street, Gopalapuram<br>
-                                        Chennai 600086<br>
-                                        (Opp National Public School)
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social" href="https://www.facebook.com/sri.kalpaka"><i class="fab fa-facebook"></i></a>
-                                        <a class="social" href="https://www.instagram.com/sri._.kalpaka"><i class="fab fa-instagram"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <form>
-                            <input type="text" placeholder="name" required>
-                            <input type="number" placeholder="phone" required><br>
-                            <textarea placeholder="your inquiry" required rows="5"></textarea><br>
-                            <button class="btn_one">send</button>
-                        </form> 
-                    </td>
-                </tr>
+                <!--<tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/sri.kalpaka"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/sri._.kalpaka"><i class="fab fa-instagram"></i></a></td>
+                </tr>-->
             </table>
+        </td>
+        <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+    </tr>
+</table>
+<div id="gallery">
+    <h1>Gallery</h1>
+    <div id="photos">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/1.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/2.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/4.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/5.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/6.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/7.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/8.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/9.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/10.jpeg?raw=true">
+        <img onclick="magnify($(this).attr('src'))"
+             src="https://github.com/prithivraj/prithivraj.github.io/blob/master/images/11.jpeg?raw=true">
     </div>
-    <script src="index.js" type="text/javascript"></script>
+</div>
+
+<div id="services">
+    <h1>Services</h1>
+    <h2>Threading</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Eyebrows</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Upperlip</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Chin</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Forehead</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <h2>Waxing</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Half arms</td>
+            <td>300</td>
+            <td>220</td>
+        </tr>
+        <tr>
+            <td>Half legs</td>
+            <td>300</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Full arms</td>
+            <td>500</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>Full legs</td>
+            <td>600</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Under arms</td>
+            <td>150</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Chin</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Upper lip</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Face</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+    </table>
+    <h2>Flavoured waxing</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Half Arms</td>
+            <td>400</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Half Legs</td>
+            <td>500</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Full Arms</td>
+            <td>800</td>
+            <td>650</td>
+        </tr>
+        <tr>
+            <td>Full Legs</td>
+            <td>900</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Under Arms</td>
+            <td>500</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Chin</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Upper lip</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Face</td>
+            <td>250</td>
+            <td>250</td>
+        </tr>
+
+    </table>
+    <h2>Hand and Feet</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Regular Manicure</td>
+            <td>450</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Regular Pedicure</td>
+            <td>550</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Anti Tan Manicure</td>
+            <td>850</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Anti Tan</td>
+            <td>950</td>
+            <td>850</td>
+        </tr>
+        <tr>
+            <td>Pedicure</td>
+            <td>750</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>Chocolate Manicure</td>
+            <td>850</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Chocolate Pedicure</td>
+            <td>950</td>
+            <td>900</td>
+        </tr>
+        <tr>
+            <td>SPA Manicure</td>
+            <td>1000</td>
+            <td>950</td>
+        </tr>
+        <tr>
+            <td>SPA Pedicure</td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Signature Manicure</td>
+            <td>1200</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Signature Pedicure</td>
+            <td>1200</td>
+            <td>1200</td>
+        </tr>
+    </table>
+    <h2>Hair</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Kids under 4 years</td>
+            <td>300</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Kids 5-11 years old</td>
+            <td>200</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Women's haircut (regular)</td>
+            <td>350</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Creative cut and style</td>
+            <td>1100</td>
+            <td>1100</td>
+        </tr>
+        <tr>
+            <td>Re-style</td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Wash and blow-dry</td>
+            <td>400</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Blow-dry</td>
+            <td>200</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Cut, Shampoo set</td>
+            <td>500 onwards</td>
+            <td>500 onwards</td>
+        </tr>
+
+    </table>
+    <h2>Skin bleaching</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Upper Lip</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Under Arms</td>
+            <td>100</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Feet</td>
+            <td>150</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>Face & neck</td>
+            <td>300</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Face, neck, & blouse-line</td>
+            <td>400</td>
+            <td>360</td>
+        </tr>
+        <tr>
+            <td>Half arm</td>
+            <td>500</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Full arm</td>
+            <td>700</td>
+            <td>550</td>
+        </tr>
+        <tr>
+            <td>Half Leg</td>
+            <td>700</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>Full Leg</td>
+            <td>1000</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Half Back/Front</td>
+            <td>300</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Full Back/Front</td>
+            <td>800</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Full Body</td>
+            <td>2500</td>
+            <td>2000</td>
+        </tr>
+
+
+    </table>
+    <h2>De-tanning</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Neck</td>
+            <td>200</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Half Hands</td>
+            <td>300</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Full Hands</td>
+            <td>900</td>
+            <td>900</td>
+        </tr>
+        <tr>
+            <td>Half Legs</td>
+            <td>300</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Full Legs</td>
+            <td>400</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Full Body</td>
+            <td>1500</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Under Arms</td>
+            <td>300</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Face</td>
+            <td>600</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>Full Leg</td>
+            <td>1000</td>
+            <td>800</td>
+        </tr>
+    </table>
+    <h2>Facial</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Mini Facial</td>
+            <td>900</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Clean & Clear</td>
+            <td>1000</td>
+            <td>850</td>
+        </tr>
+
+    </table>
+    <h2>Core facial</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Aura Facial</td>
+            <td>1200</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Tan Clear Facial</td>
+            <td>1500</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Snow White Facial</td>
+            <td>1800</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Radiant Facial</td>
+            <td>1900</td>
+            <td>1750</td>
+        </tr>
+        <tr>
+            <td>Soothing Facial</td>
+            <td>2300</td>
+            <td>2300</td>
+        </tr>
+        <tr>
+            <td>Herbal Facial</td>
+            <td>2600</td>
+            <td>2600</td>
+        </tr>
+        <tr>
+            <td>Age Smart Facial</td>
+            <td>2800</td>
+            <td>2800</td>
+        </tr>
+        <tr>
+            <td>Gloss</td>
+            <td>3500</td>
+            <td>3500</td>
+        </tr>
+        <tr>
+            <td>Signature</td>
+            <td>4000</td>
+            <td>4000</td>
+        </tr>
+    </table>
+    <h2>Add-on mask</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Brightening</td>
+            <td>500</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Aura</td>
+            <td>750</td>
+            <td>750</td>
+        </tr>
+        <tr>
+            <td>Gloss</td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+    </table>
+    <h2>Treatment</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Anti hairfall</td>
+            <td>900/sitting</td>
+            <td>900/sitting</td>
+        </tr>
+        <tr>
+            <td>Anti Dandruff</td>
+            <td>1500/sitting</td>
+            <td>1500/sitting</td>
+        </tr>
+        <tr>
+            <td>Oil Massage</td>
+            <td>600 onwards</td>
+            <td>600 onwards</td>
+        </tr>
+    </table>
+    <h2>Hair spa</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Classic</td>
+            <td>700</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>Moisturising</td>
+            <td>1500</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Frizz Ease</td>
+            <td>900</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Repair & Rejuvenate</td>
+            <td>1800</td>
+            <td>1200</td>
+        </tr>
+
+    </table>
+    <h2>Hair forms (for S/M/L)</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Smoothening</td>
+            <td>4000/6000/8000</td>
+            <td>4000/6000/8000</td>
+        </tr>
+        <tr>
+            <td>Straightening</td>
+            <td>5000/8000/10000</td>
+            <td>5000/8000/10000</td>
+        </tr>
+        <tr>
+            <td>Keratin</td>
+            <td>6000/8000/10000</td>
+            <td>6000/8000/10000</td>
+        </tr>
+        <tr>
+            <td>Re bonding</td>
+            <td>2500/6000/7000</td>
+            <td>2500/6000/7000</td>
+        </tr>
+        <tr>
+            <td>Twist & Curl</td>
+            <td>3000/5000/6000</td>
+            <td>3000/5000/6000</td>
+        </tr>
+
+
+    </table>
+    <h2>Hair color</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Root touch-up</td>
+            <td>900</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Root touch-up (Ammonia free)</td>
+            <td>1200</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Global colour</td>
+            <td>2500 onwards</td>
+            <td>2500 onwards</td>
+        </tr>
+        <tr>
+            <td>Global colour (Ammonia free)</td>
+            <td>3500 onwards</td>
+            <td>3500 onwards</td>
+        </tr>
+        <tr>
+            <td>Global Fashion Colour</td>
+            <td>4000 onwards</td>
+            <td>4000 onwards</td>
+        </tr>
+        <tr>
+            <td>Colour streaks</td>
+            <td>800 onwards</td>
+            <td>800 onwards</td>
+        </tr>
+        <tr>
+            <td>Full streaks</td>
+            <td>3000</td>
+            <td>3000</td>
+        </tr>
+    </table>
+    <h2>Skin</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Polishing</td>
+            <td>2000</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Massage</td>
+            <td>1000</td>
+            <td>1000</td>
+        </tr>
+    </table>
+    <h2>Reflexology</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Hand (15 mins)</td>
+            <td>500</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>Feet (20 mins)</td>
+            <td>700</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>Back & Neck (25 mins)</td>
+            <td>750</td>
+            <td>750</td>
+        </tr>
+    </table>
+    <h2>Bridal</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Trial</td>
+            <td>1500</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Cleanse & Makeup</td>
+            <td>2999</td>
+            <td>2999</td>
+        </tr>
+        <tr>
+            <td>Friends of Bride</td>
+            <td>1500</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>Mehendi</td>
+            <td>500 onwards</td>
+            <td>500 onwards</td>
+        </tr>
+    </table>
+    <h2>Package</h2>
+    <table class="pricing">
+        <tr>
+            <th>Service</th>
+            <th>Regular</th>
+            <th>Member</th>
+        </tr>
+        <tr>
+            <td>Trial & Wedding</td>
+            <td>6000 onwards</td>
+            <td>6000 onwards</td>
+        </tr>
+        <tr>
+            <td>Trial, Wedding, & Reception</td>
+            <td>6000 onwards</td>
+            <td>6000 onwards</td>
+        </tr>
+    </table>
+</div>
+
+<div id="contact">
+    <h1>Contact</h1>
+    <table>
+        <tr>
+            <td>
+                <div id="inner_div">
+                    <table id="inner_table">
+                        <tr>
+                            <td><i class="fas fa-phone"></i> &nbsp; +919884886778</td>
+                        </tr>
+                        <!--                                <tr>-->
+                        <!--                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>-->
+                        <!--                                </tr>-->
+
+                        <tr>
+                            <td><i class="fas fa-map-marker-alt"></i>
+                                <div id="address">
+                                    22, Sadasivam Street, Gopalapuram<br>
+                                    Chennai 600086<br>
+                                    (Opp National Public School)
+                                </div>
+                                <a href="https://goo.gl/maps/ZAeM4vkVYuhqpcrL7" target="_blank">View on Google maps
+                                    ></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="social" href="https://www.facebook.com/sri.kalpaka"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a class="social" href="https://www.instagram.com/sri._.kalpaka"><i
+                                        class="fab fa-instagram"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <form>
+                    <input type="text" placeholder="name" required>
+                    <input type="number" placeholder="phone" required><br>
+                    <textarea placeholder="your inquiry" required rows="5"></textarea><br>
+                    <button class="btn_one">send</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="index.js" type="text/javascript"></script>
 </body>
 </html>
